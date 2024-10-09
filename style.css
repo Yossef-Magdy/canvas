@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#toolbar {
+    position: fixed;
+    top: 0;
+    background-color: #4f4f4f;
+    color: white;
+    font: bold 15px tahoma;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    padding: 0 1rem;
+    align-items: center;
+    gap: 1rem;
+}
+#radiusbar {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    gap: 0.5rem;
+    align-items: center;
+}
+.incredecre, #radiusvalue {
+    padding: 0.5rem;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#savebar {
+    display: grid;
+}
+#savebtn {
+    font-size: 1rem;
+    justify-self: end;
+    border: none;
+    color: white;
+    border-radius: 4px;
+}
+#savebtn a {
+    text-decoration: inherit;
+    color: inherit;
+    height: 35px;
+    display: block;
+    padding: 0.5rem 1rem;
+}
+.incredecre, #radiusvalue, #savebtn {
+    background-image: linear-gradient(purple, violet);
+    cursor: pointer;
+}
+.incredecre:hover, #radiusvalue:hover, #savebtn:hover {
+    background-image: linear-gradient(violet, purple);
+}
+#colorsbar {
+    display: flex;
+    gap: 0.5rem;
+}
+.colors {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.active {
+    border: 2px solid white;
+}

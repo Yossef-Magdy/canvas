@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Canvas</title>
+</head>
+<body>
+    <div id="toolbar">
+        <div id="radiusbar">
+            <label>Radius</label>
+            <span id="radiusvalue">10</span>
+            <span id="incre" onclick="increaseRadius();" class="incredecre">&plus;</span>
+            <span id="decre" onclick="decreaseRadius();" class="incredecre">&minus;</span>
+        </div>
+        <!-- <div id="savebar"> <a download="myImage.jpg" href=""> <button>Save</button> </a> </div> -->
+        <div id="savebar"> <button id="savebtn"><a download="img.jpg" href="">Save</a></button></div>
+        <div id="colorsbar">
+            
+        </div>
+    </div>
+    <div class="container">
+        <canvas id="mycanvas" style="display: block;">
+            Sorry, Update Your Browser and try again!;
+        </canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
